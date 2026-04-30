@@ -1,4 +1,4 @@
-/*#![allow(unused_variables)]
+#![allow(unused_variables)]
 fn main()
 {
     let l = vec![1, 2, 3];
@@ -14,8 +14,8 @@ fn main()
     //{
         //println!("{}", val);
     //}
-}*/
-#![allow(unused_variables)]
+}
+/*#![allow(unused_variables)]
 fn main()
 {
     let mut l = vec![354, 384, 3, 3557,5];
@@ -27,7 +27,7 @@ fn main()
         *val += 1;
         println!("{}", val)
     }
-}
+}*/
 
 /*fn main() {
     let a = vec![1, 2, 3, 4, 5, 56, 88, 684987631];
