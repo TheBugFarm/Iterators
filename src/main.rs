@@ -1,4 +1,10 @@
-#![allow(unused_variables)]
+fn main() {
+    let v = vec![1, 2, 3];
+    let r = v.into_iter();
+    println!("{:?}", r);
+    println!("{:?}", v);
+}
+/*#![allow(unused_variables)]
 fn main()
 {
     let l = vec![1, 2, 3];
@@ -14,7 +20,7 @@ fn main()
     //{
         //println!("{}", val);
     //}
-}
+}*/
 /*#![allow(unused_variables)]
 fn main()
 {
