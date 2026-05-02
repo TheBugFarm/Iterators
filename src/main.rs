@@ -2,7 +2,7 @@ fn main() {
     let v = vec![1, 2, 3];
     let r = v.into_iter();
     println!("{:?}", r);
-    println!("{:?}", v);
+    //println!("{:?}", v);
 }
 /*#![allow(unused_variables)]
 fn main()
