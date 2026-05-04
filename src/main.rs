@@ -1,9 +1,15 @@
 fn main() {
+    let v = vec![1, 2, 3, 78];
+    let r = v.iter();
+    let sum: i32 = r.sum();
+    println!("{}", sum); 
+}
+/*fn main() {
     let v = vec![1, 2, 3];
     let r = v.into_iter();
     println!("{:?}", r);
     //println!("{:?}", v);
-}
+}*/
 /*#![allow(unused_variables)]
 fn main()
 {
@@ -36,13 +42,10 @@ fn main()
 }*/
 
 /*fn main() {
-    let a = vec![1, 2, 3, 4, 5, 56, 88, 684987631];
-    let v = a.iter();
-    println!("{:?}",a);
+    let mut a = vec![1, 2, 3, 4, 5, 56, 88, 684987631];
+    let v = a.iter_mut();
     println!("{:?}",v);
     for val in v {
-        if val % 2 != 0 {
-            println!("{}", val);
-        }
+        *val = *val + 1;
     }
 }*/
