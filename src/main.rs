@@ -1,9 +1,17 @@
 fn main() {
+    let v = vec![1, 2, 3];
+    let r = v.iter();
+    let y = r.map(|x| x % 2);
+    for i in y {
+        print!("{}", i);
+    }
+}
+/*fn main() {
     let v = vec![1, 2, 3, 78];
     let r = v.iter();
     let sum: i32 = r.sum();
     println!("{}", sum); 
-}
+}*/
 /*fn main() {
     let v = vec![1, 2, 3];
     let r = v.into_iter();
