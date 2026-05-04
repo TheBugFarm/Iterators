@@ -1,11 +1,21 @@
 fn main() {
+    let v = vec![1,2,3,4,5,6,7,8];
+    for i in v.iter() {
+        println!("{}",i);
+    }
+    let y = v.iter().filter(|x| *x % 2 == 0);
+    for i in y {
+        println!("{}",i);
+    }
+}
+/*fn main() {
     let v = vec![1, 2, 3];
     let r = v.iter();
     let y = r.map(|x| x % 2);
     for i in y {
         print!("{}", i);
     }
-}
+}*/
 /*fn main() {
     let v = vec![1, 2, 3, 78];
     let r = v.iter();
