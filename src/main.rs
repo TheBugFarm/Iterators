@@ -1,9 +1,29 @@
+use std::collections::HashMap;
 fn main() {
-    let v = vec![1, 2, 3, 4, 5, 6, 7];
+    
+    let mut scores = HashMap::new();
+    scores.insert("bitch", 88);
+    scores.insert("ninni", 24);
+    scores.insert("green", 368);
+    scores.insert("prepaid", 654);
+    println!("{:?}", scores);
+
+    for (key, value) in scores.iter() {
+        println!("{} {}", key, value);
+    }
+
+    for (key, value) in scores.iter_mut() {
+        *value += 10;
+        println!("{} {}", key, value);
+    }
+
+}
+/*fn main() {
+    let v = vec![1, 2, 3, 4,];
     let y = v.iter();
     let r: Vec<i32> = y.filter(|x| **x % 2 == 0).map(|x| x*x).collect();
     println!("{:?}", r);
-}
+}*/
 /*fn main() {
     let v = vec![2, 3, 4, 5, 6, 7, 8];
     println!("{:?}", v);
