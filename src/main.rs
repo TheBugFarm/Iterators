@@ -1,13 +1,19 @@
 fn main() {
-    let v = vec![1,2,3,4,5,6,7,8];
-    for i in v.iter() {
-        println!("{}",i);
-    }
-    let y = v.iter().filter(|x| *x % 2 == 0);
-    for i in y {
-        println!("{}",i);
-    }
+    let v = vec![1, 2, 3, 4, 5, 6, 7];
+    let y = v.iter();
+    let r: Vec<i32> = y.filter(|x| **x % 2 == 0).map(|x| x*x).collect();
+    println!("{:?}", r);
 }
+/*fn main() {
+    let v = vec![2, 3, 4, 5, 6, 7, 8];
+    println!("{:?}", v);
+    let r = v.iter();
+    let y = r.filter(|x| **x % 2 == 0);
+    for i in y {
+        println!("{}", i);
+    }
+
+}*/
 /*fn main() {
     let v = vec![1, 2, 3];
     let r = v.iter();
@@ -20,7 +26,7 @@ fn main() {
     let v = vec![1, 2, 3, 78];
     let r = v.iter();
     let sum: i32 = r.sum();
-    println!("{}", sum); 
+    println!("{}", sum);
 }*/
 /*fn main() {
     let v = vec![1, 2, 3];
